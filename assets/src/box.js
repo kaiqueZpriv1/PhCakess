@@ -1,3 +1,7 @@
+const buttonBolo = document.getElementById("btnBolo");
+buttonBolo.addEventListener("click", function() {
+    document.getElementById("secaoDescricao").style.width = "100%";
+});
 
 
 const descricoes = [
