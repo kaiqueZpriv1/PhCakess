@@ -1,6 +1,4 @@
-const bolos = document.getElementById("boxBolos");
-const produto = document.createElement("div")
-produto.classList = "produto"
+
 
 const produtos = [
     
@@ -75,4 +73,3 @@ function exibirProdutos() {
 }
 exibirProdutos();
 
-bolos.appendChild(secaoProduto)
