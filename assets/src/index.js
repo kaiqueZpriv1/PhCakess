@@ -7,42 +7,42 @@ const produtos = [
     {
         id: 1,
         image: "https://via.placeholder.com/150",
-        name: "Bolo de Chocolate",
+        name: "Chocolate com morango",
         button: "Descrição"
 
     },
     {
         id: 2,
         image: "https://via.placeholder.com/150",
-        name: "bolo de Chocolate",
+        name: "Chocolate com morango",
         button: "Descrição"
 
     },
     {
         id: 3,
         image: "https://via.placeholder.com/150",
-        name: "bolo de Chocolate",
+        name: "Chocolate com morango",
         button: "Descrição"
 
     },
     {
         id: 4,
         image: "https://via.placeholder.com/150",
-        name: "bolo de Chocolate",
+        name: "Chocolate com morango",
         button: "Descrição"
 
     },
     {
         id: 5,
         image: "https://via.placeholder.com/150",
-        name: "bolo de Chocolate",
+        name: "Chocolate com morango",
         button: "Descrição"
 
     },
     {
         id: 6,
         image: "https://via.placeholder.com/150",
-        name: "bolo de Chocolate",
+        name: "Chocolate com morango",
         button: "Descrição"
 
     }
@@ -62,6 +62,7 @@ function exibirProdutos() {
         nome.textContent = produto.name;
 
         const button = document.createElement("button");
+        button.setAttribute("id", "btnBolo")
         button.textContent = produto.button
 
         div.appendChild(img);

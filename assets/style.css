@@ -151,6 +151,9 @@ background-color: rgb(226, 128, 253);
   text-shadow: 0 0 10px;
 }
 /* main */
+main{
+  height: 50vh;
+}
 .container-main{
   width: 100%;
 }
@@ -197,11 +200,13 @@ background-color: rgb(226, 128, 253);
 }
 /*  boos */
 #bolos{
-  height: 75px;
+  height: 85px;
   width: 100%;
-  margin: 150px 0;
+  background: rgba(255, 255, 255, 1);
+  padding: 50px 0;
 }
 .container-bolos{
+  background: rgba(255, 255, 255, 1);
   max-width: 100%;
 }
 .apresentacao-content{
@@ -218,17 +223,17 @@ background-color: rgb(226, 128, 253);
 #secaoProdutos{
   display: grid;
   align-items: center;
+  justify-content: center;
   grid-template-columns: 200px 200px;
-  gap: 50px 5px;
-  background-color: #ecc0fa;
+  gap: 30px 10px;
 }
 .produto{
-  background-color: #e9a0ff;
+  background-color: rgb(255, 175, 248);
   border-radius: 15px;
   padding: 15px;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 20px;
 }
 
 .produto img{
@@ -236,17 +241,17 @@ background-color: rgb(226, 128, 253);
 }
 .produto h3{
   font-size: 4.3vw;
-  white-space: nowrap;
+  font-weight: 700;
+  text-align: center;
   font-family: 'Montserrat', sans-serif;
+  color: rgb(37, 37, 37);
 }
-.produto p{
-  font-size: 4vw;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  text-align: center;
-}
-.produto span{
-  font-size: 5vw;
-  font-family: "Lobster", cursive;
-  text-align: center;
+.produto button{
+  padding: 10px;
+  background-color: rgba(121, 0, 111, 1);
+  border-radius: 20px;
+  color: rgba(255, 255, 255, 1);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 3vw;
 }
