@@ -200,58 +200,51 @@ main{
 }
 /*  boos */
 #bolos{
-  height: 85px;
   width: 100%;
-  background: rgba(255, 255, 255, 1);
+  height: 150vh;
+  background-color: rgba(250, 145, 241,0.1);
   padding: 50px 0;
-}
-.container-bolos{
-  background: rgba(255, 255, 255, 1);
-  max-width: 100%;
-}
-.apresentacao-content{
-  text-align: center;
-  margin: 50px 0;
 }
 .apresentacao-content h3{
   font-size: 12vw;
-  text-shadow: 20px -15px 5px rgb(250, 145, 241);
+  text-align: center;
   color: rgba(121, 0, 111, 1);
-  font-family: 'Lobster', cursive;
-}
-/*  produtos */
-#secaoProdutos{
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: 200px 200px;
-  gap: 30px 10px;
-}
-.produto{
-  background-color: rgb(255, 175, 248);
-  border-radius: 15px;
-  padding: 15px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  text-shadow: 25px -27px 8px rgb(200, 0, 255);
 }
 
+.bolos{
+  padding-top: 50px;
+}
+.container-bolos{
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 200px 200px;
+  background-color: rgb(236,192,251);
+  /* gap: 20px; */
+}
+.produto{
+  margin: auto;
+  background: rgb(236,192,251);
+  box-shadow: 0 0 10px rgb(200, 0, 255);
+  border-radius: 15px;
+}
 .produto img{
+  border-radius: 15px;
   width: 100%;
 }
 .produto h3{
   font-size: 4.3vw;
-  font-weight: 700;
-  text-align: center;
+  margin: 0 3px;
   font-family: 'Montserrat', sans-serif;
-  color: rgb(37, 37, 37);
+  text-align: center;
+  margin: 20px 0;
 }
 .produto button{
-  padding: 10px;
+  margin-left: 40px;
+  margin-bottom: 20px;
+  padding: 10px 25px;
+  border-radius: 10px;
+  color: rgb(250, 250, 250);
+  font-size: 4vw;
   background-color: rgba(121, 0, 111, 1);
-  border-radius: 20px;
-  color: rgba(255, 255, 255, 1);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 3vw;
 }

@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "xabikos.javascriptsnippets",
+        "esbenp.prettier-vscode",
+        "ritwickdey.liveserver",
+        "yandeu.five-server"
+    ]
+}
