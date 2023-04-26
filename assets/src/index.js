@@ -76,7 +76,6 @@ function exibirBolos() {
         buttonDescricao.textContent = "Ver detalhe";
 
         buttonDescricao.addEventListener("click", function() {
-            closeDescricao.style.display = "block"
             exibirDetalhes.style.height = "100%"
         })
         
@@ -100,6 +99,10 @@ function exibirBolos() {
         closeDescricao.addEventListener("click", function() {
             exibirDetalhes.style.height = "0"
         })
+        
+        const logoType = document.createElement("span")
+        logoType.textContent = "Ph Cakes"
+        logoType.classList.add("logo-detalhes")
         
 
         const image = document.createElement("img")
@@ -125,6 +128,7 @@ function exibirBolos() {
         linkEncomenda.href = "https://wa.me/5511986979128"
         linkEncomenda.target = "_blank"
 
+        containerDetalhes.appendChild(logoType)
         containerDetalhes.appendChild(closeDescricao)
         containerDetalhes.appendChild(image)
         containerDetalhes.appendChild(saborDescricao)
