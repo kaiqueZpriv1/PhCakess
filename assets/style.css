@@ -159,19 +159,20 @@ main{
 }
 .text-main h1{
   font-size: 12vw;
-  color: rgb(143, 1, 133);
-  text-shadow: 0 0 5px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+  color: rgb(46, 27, 21);
 }
 .text-main span{
   font-size: 10vw;
-  font-weight: 700;
-  color: rgb(207, 76, 243);
+  font-weight: 600;
+  color: rgb(79, 32, 13);
 }
 .text-main p{
   font-size: 7vw;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  color: rgba(78, 78, 78, 1);
+  color: rgba(0, 0, 0, 0.5);
 }
 .animation-cakes img{
   width: 45px;
