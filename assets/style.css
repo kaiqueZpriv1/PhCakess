@@ -166,6 +166,7 @@ main{
 .text-main span{
   font-size: 10vw;
   font-weight: 600;
+  font-family: 'Roboto', sans-serif;
   color: rgb(79, 32, 13);
 }
 .text-main p{
