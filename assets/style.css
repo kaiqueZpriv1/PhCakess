@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-/* font-family: 'Lobster', cursive;
-font-family: 'Poppins', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
-/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -12,12 +6,13 @@ font-family: 'Roboto', sans-serif; */
     box-sizing: border-box;
     font-family:'Roboto', sans-serif;
 }
+html{
+  background-color:rgb(245,234,221);
+}
 body{
     max-width: 420px;
     width: 100%;
-    background: url(./img/bg-mobile-428.jpg) no-repeat;
-    /* background-color: #ecc0fa; */
-    
+    background: url(./img/background-mobile.jpg) no-repeat;
 }
 header{
     /* background-color: rgba(233, 157, 255, 1); */
@@ -34,7 +29,7 @@ header{
 .logo span{
     font-size: 5vw;
     font-family: 'Poppins', cursive;
-    color: rgb(200, 0, 255);
+    color: rgb(143, 1, 133);
     font-weight: 600;
 }
 /* menu burguer */
@@ -152,7 +147,8 @@ background-color: rgb(226, 128, 253);
 }
 /* main */
 main{
-  height: 50vh;
+  padding-bottom: 50px;
+  height: 70vh;
 }
 .container-main{
   width: 100%;
@@ -163,7 +159,7 @@ main{
 }
 .text-main h1{
   font-size: 12vw;
-  color: rgba(65, 65, 65, 1);
+  color: rgb(143, 1, 133);
   text-shadow: 0 0 5px;
 }
 .text-main span{
@@ -200,10 +196,11 @@ main{
 }
 /*  boos */
 #bolos{
-  width: 100%;
   height: 150vh;
-  background-color: rgba(250, 145, 241,0.1);
+  background-color: rgb(245,234,221);
+  width: 430px;
   padding: 50px 0;
+  color: rgb(245, 234, 221);
 }
 .apresentacao-content h3{
   font-size: 12vw;
@@ -217,38 +214,42 @@ main{
 }
 .container-bolos{
   display: grid;
+  width: 100%;
   gap: 20px;
   grid-template-columns: 200px 200px;
-  background-color: rgb(236,192,251);
-  /* gap: 20px; */
 }
 .produto{
   margin: auto;
   display: block;
   display: block;
-  background: rgb(236,192,251);
-  box-shadow: 0 0 10px rgb(200, 0, 255);
+  background: rgb(212, 174, 164);
   border-radius: 15px;
+  box-shadow: 2px 2px 2px rgb(46, 27, 21);
 }
 .produto img{
   border-radius: 15px;
-  width: 100%;
+  width: 90%;
+  margin:  10px;
 }
 .produto h3{
-  font-size: 4.3vw;
+  font-size: 5vw;
+  font-weight: 800;
   margin: 0 3px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
-  margin: 20px 0;
+  margin: 10px 0;
+  color: rgb(79, 32, 13);
 }
 .produto button{
-  margin-left: 30px;
+  margin-left: 25px;
+  margin-top: 20px;
   margin-bottom: 20px;
-  padding: 10px 30px;
+  padding: 8px 30px;
   border-radius: 10px;
   color: rgb(250, 250, 250);
   font-size: 4vw;
-  background-color: rgba(121, 0, 111, 1);
+  background-color: rgb(65,39,31);
+  border: 5px solid rgb(65,39,31);
 }
 /* detalhes */
 #exibirDetalhe{
@@ -260,7 +261,7 @@ main{
   top: 0;
   overflow-x: hidden;
   transition: height 0.7s;
-  background-color: rgb(143, 1, 133);
+  background-color: rgb(235, 231, 202);
   display: flex;
   flex-direction: column;
 }
@@ -269,52 +270,55 @@ main{
   top: 15px;
   left: 170px;
   font-size: 7vw;
-  color: rgb(200, 0, 255);
+  color: rgb(79, 32, 13);
   font-family: "Lobster", cursive;
 }
 .container-detalhes i {
-  color: #fafafa;
+  color: rgb(79, 32, 13);
   font-size: 10vw;
   position: relative;
   right: 90px;
-  top: 10px;
+  top: 20px;
 }
 .container-detalhes img{
   width: 350px;
   position: relative;
-  left: 40px;
+  left: 30px;
   top: 45px;
 }
 .container-detalhes h3{
-  margin-top: 80px;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(207, 76, 243);
+  margin-top: 55px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(65,39,31);
   font-size: 8vw;
 }
 .container-detalhes p{
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 8px;
   text-align: center;
   font-size: 5.5vw;
+  font-weight: 600;
   font-family: "Poppins", sans-serif;
 }
 .container-spans{
   display: flex;
   justify-content: space-evenly;
-  margin: 35px 0;
+  margin: 35px 0 0 0;
   padding: 5px 0;
   border-top: 0.5px solid rgba(255, 255, 255, 0.5);
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
 }
 .container-spans span{
   font-size: 7vw;
-  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  color: rgb(65,39,31);
 }
 .btn-encomenda{
-  position: absolute;
-  top: 780px;
-  left: 22%;
+  position: relative;
+  left: 90px;
+  top: 20px;
 }
 .btn-encomenda a{
   font-size: 5vw;
-  color: #fafafa;
+  color: rgb(250, 250, 250);
 }
