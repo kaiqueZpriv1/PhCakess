@@ -6,7 +6,7 @@ body.appendChild(sectionBolos);
 // bolos (conteudo)
 const bolos = [
     {
-        id: 1,
+        id: 0,
         image: "./assets/img/bolos/abacaxi-c-coco.jpeg",
         sabor: "Abacaxi com coco",
         descricao: "Massa branca,  recheio de Abacaxi c/ coco, cobertura feita com chantilly.",
@@ -20,28 +20,28 @@ const bolos = [
         kg: "5kg"
     },
     {
-        id: 1,
+        id: 2,
         image: "./assets/img/bolos/doce-de-leite.jpeg",
         sabor: "Doce de leite",
         descricao: "Bolo de 4,5 kg, Massa mesclada, recheio de doce de leite, cobertura feita com chantilly.",
         kg: "5kg"
     },
     {
-        id: 1,
+        id: 3,
         image: "./assets/img/bolos/kitkat.jpeg",
         sabor: "Kitkat",
         descricao: "Bolo de 2 kg, Massa branca, recheio de kit kat, cobertura feita com chantilly.",
         kg: "5kg"
     },
     {
-        id: 1,
+        id: 4,
         image: "./assets/img/bolos/ninho-c-morango.jpeg",
         sabor: "Ninho com morango",
         descricao: "Bolo de 1,5 kg, massa branca no sabor abacaxi, recheio de ninho c/ morangos, cobertura feita com chantilly.",
         kg: "5kg"
     },
     {
-        id: 1,
+        id: 5,
         image: "./assets/img/bolos/oreo.jpeg",
         sabor: "Oreo",
         descricao: "Bolo de 2 kg, massa Preta, recheio de oreo, cobertura feita com chantilly.",
@@ -49,10 +49,11 @@ const bolos = [
     }
 ];
 
+
 function exibirBolos() {
     const containerBolos = document.createElement("div")
     containerBolos.classList.add("container-bolos")
-
+    
     sectionBolos.appendChild(containerBolos)
 
     bolos.forEach(bolo => {
@@ -61,50 +62,57 @@ function exibirBolos() {
         
         let img = document.createElement("img")
         img.src = bolo.image
-
+        
         let sabor = document.createElement("h3")
         sabor.textContent = bolo.sabor
+        
+        
+        let closeDescricao = document.createElement("i")
+        closeDescricao.classList.add("ri-close-fill")
+        
+        const buttonDescricao = document.createElement("button");
+        buttonDescricao.textContent = "Ver detalhe";
 
-        let buttonDescricao = document.createElement("button")
-        buttonDescricao.textContent = "Ver detalhe"
+        buttonDescricao.addEventListener("click", function() {
+            exibirDetalhes.style.display = "block"
+            produto.style.position = "absolute"
+            closeDescricao.style.display = "block"
+            buttonDescricao.style.display = "none"
+        })
+        closeDescricao.addEventListener("click", function() {
+            exibirDetalhes.style.display = "none"
+            produto.style.position = "relative"
+            closeDescricao.style.display = "none"
+            buttonDescricao.style.display = "block"
 
+        })
+
+        // push produtos
+        produto.appendChild(closeDescricao)
         produto.appendChild(img)
         produto.appendChild(sabor)
         produto.appendChild(buttonDescricao)
-
+        // container dos produtos
         containerBolos.appendChild(produto)
-    })
-}
-exibirBolos();
 
-function exibirDetalhe() {
-    const containerDetalhe = document.createElement("section")
-    containerDetalhe.classList.add("detalhe")
-
-    sectionBolos.appendChild(containerDetalhe)
-
-    bolos.forEach(bolo => {
+        // exibir detalhes
         const exibirDetalhes = document.createElement("div")
         exibirDetalhes.setAttribute("id", "exibirDetalhe")
+        produto.appendChild(exibirDetalhes)
 
-        let img = document.createElement("img")
-        img.src = bolo.image
-        let sabor = document.createElement("h3")
-        sabor.textContent = bolo.sabor
         let descricoes = document.createElement("p")
         descricoes.textContent = bolo.descricao
+
         let sectionSpans = document.createElement("div")
         sectionSpans.classList.add("container-spans")
+
         let kg = document.createElement("span")
         kg.textContent  = bolo.kg
 
-        exibirDetalhe.appendChild(img)
-        exibirDetalhe.appendChild(sabor)
-        exibirDetalhe.appendChild(descricoes)
-        exibirDetalhe.appendChild(sectionSpans)
+        exibirDetalhes.appendChild(descricoes)
+        exibirDetalhes.appendChild(sectionSpans)
         sectionSpans.appendChild(kg)
 
-        containerDetalhe.appendChild(exibirDetalhe)
-    })
+    });
 }
-exibirDetalhe();
+exibirBolos();

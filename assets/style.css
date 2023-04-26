@@ -215,6 +215,7 @@ main{
 .bolos{
   padding-top: 50px;
 }
+
 .container-bolos{
   display: grid;
   gap: 20px;
@@ -224,9 +225,14 @@ main{
 }
 .produto{
   margin: auto;
+  display: block;
   background: rgb(236,192,251);
   box-shadow: 0 0 10px rgb(200, 0, 255);
   border-radius: 15px;
+}
+.produto i{
+  display: none;
+  font-size: 10vw;
 }
 .produto img{
   border-radius: 15px;
@@ -247,4 +253,13 @@ main{
   color: rgb(250, 250, 250);
   font-size: 4vw;
   background-color: rgba(121, 0, 111, 1);
+}
+/* detalhes */
+#exibirDetalhe{
+  position: relative;
+  display: none;
+}
+#exibirDetalhe p{
+  font-size: 5vw;
+  font-family: "poppins", sans-serif;
 }
