@@ -215,7 +215,6 @@ main{
 .bolos{
   padding-top: 50px;
 }
-
 .container-bolos{
   display: grid;
   gap: 20px;
@@ -226,9 +225,14 @@ main{
 .produto{
   margin: auto;
   display: block;
+  display: block;
   background: rgb(236,192,251);
   box-shadow: 0 0 10px rgb(200, 0, 255);
   border-radius: 15px;
+}
+.produto i{
+  display: none;
+  font-size: 10vw;
 }
 .produto i{
   display: none;
@@ -253,61 +257,4 @@ main{
   color: rgb(250, 250, 250);
   font-size: 4vw;
   background-color: rgba(121, 0, 111, 1);
-}
-/* detalhes */
-#exibirDetalhe{
-  width: 100%;
-  height: 0;
-  z-index: 9;
-  position: fixed;
-  left: 0;
-  top: 0;
-  overflow-x: hidden;
-  transition: height 0.7s;
-  background-color: rgb(143, 1, 133);
-  display: flex;
-  flex-direction: column;
-}
-.container-detalhes i {
-  color: #fafafa;
-  font-size: 10vw;
-}
-.container-detalhes img{
-  width: 350px;
-  position: relative;
-  left: 35px;
-  top: 60px;
-}
-.container-detalhes h3{
-  margin-top: 90px;
-  color: rgb(255, 255, 255);
-  text-shadow: 0 0 10px rgb(207, 76, 243);
-  font-size: 8vw;
-}
-.container-detalhes p{
-  color: rgba(255, 255, 255, 0.7);
-  text-align: center;
-  font-size: 5.5vw;
-  font-family: "Poppins", sans-serif;
-}
-.container-spans{
-  display: flex;
-  justify-content: space-evenly;
-  margin: 50px 0;
-  padding: 5px 0;
-  border-top: 0.5px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
-}
-.container-spans span{
-  font-size: 7vw;
-  color: rgba(255, 255, 255, 1);
-}
-.btn-encomenda{
-  position: absolute;
-  top: 800px;
-  left: 22%;
-}
-.btn-encomenda a{
-  font-size: 5vw;
-  color: #fafafa;
 }

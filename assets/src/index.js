@@ -7,6 +7,7 @@ body.appendChild(sectionBolos);
 const bolos = [
     {
         id: 0,
+        id: 0,
         image: "./assets/img/bolos/abacaxi-c-coco.jpeg",
         sabor: "Abacaxi com coco",
         descricao: "Bolo de massa branca com recheio de Abacaxi com coco e cobertura feita com chantilly.",
@@ -23,6 +24,7 @@ const bolos = [
     },
     {
         id: 2,
+        id: 2,
         image: "./assets/img/bolos/doce-de-leite.jpeg",
         sabor: "Doce de leite",
         descricao: "Bolo de 4,5 kg, Massa mesclada, recheio de doce de leite, cobertura feita com chantilly.",
@@ -30,6 +32,7 @@ const bolos = [
         preco: "R$ 15"
     },
     {
+        id: 3,
         id: 3,
         image: "./assets/img/bolos/kitkat.jpeg",
         sabor: "Kitkat",
@@ -39,6 +42,7 @@ const bolos = [
     },
     {
         id: 4,
+        id: 4,
         image: "./assets/img/bolos/ninho-c-morango.jpeg",
         sabor: "Ninho com morango",
         descricao: "Bolo de 1,5 kg, massa branca no sabor abacaxi, recheio de ninho c/ morangos, cobertura feita com chantilly.",
@@ -46,6 +50,7 @@ const bolos = [
         preco: "R$ 15"
     },
     {
+        id: 5,
         id: 5,
         image: "./assets/img/bolos/oreo.jpeg",
         sabor: "Oreo",
@@ -58,6 +63,7 @@ function exibirBolos() {
     const containerBolos = document.createElement("div")
     containerBolos.classList.add("container-bolos")
     
+    
     sectionBolos.appendChild(containerBolos)
 
     bolos.forEach(bolo => {
@@ -66,6 +72,7 @@ function exibirBolos() {
         
         let img = document.createElement("img")
         img.src = bolo.image
+        
         
         let sabor = document.createElement("h3")
         sabor.textContent = bolo.sabor
@@ -81,6 +88,7 @@ function exibirBolos() {
         produto.appendChild(img)
         produto.appendChild(sabor)
         produto.appendChild(buttonDescricao)
+        // container dos produtos
         // container dos produtos
         containerBolos.appendChild(produto)
 
