@@ -324,3 +324,20 @@ main{
   font-size: 5vw;
   color: rgb(250, 250, 250);
 }
+/* footer */
+footer{
+  background-color: rgb(245, 234, 221);
+  border-top: 1px solid rgba(255, 255, 255, 1);
+}
+.container-footer{
+  text-align: center;
+  margin-top: 100px;
+}
+.nav-site{
+}
+.nav-site a, .nav-redes a{
+  font-size: 6vw;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: "Poppins", sans-serif;
+}
+

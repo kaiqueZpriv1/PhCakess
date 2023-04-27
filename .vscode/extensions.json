@@ -2,6 +2,7 @@
     "recommendations": [
         "xabikos.javascriptsnippets",
         "ritwickdey.liveserver",
-        "yandeu.five-server"
+        "yandeu.five-server",
+        "esbenp.prettier-vscode"
     ]
 }
