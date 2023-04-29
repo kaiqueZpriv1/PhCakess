@@ -1,17 +1,18 @@
 const bodyElement = document.querySelector("body")
 const footer = document.createElement("footer")
 bodyElement.appendChild(footer)
+footer.classList.add("footer")
 
 const navegacao = [
     {
         id: 0,
         name: 'Home',
-        href: '#home'
+        href: '#main'
     },
     {
         id: 1,
         name: 'Bolos',
-        href: '#bolo'
+        href: '#bolos'
     },
     {
         id: 2,
@@ -61,7 +62,18 @@ function exibirFooter() {
         // push
         containerFooter.appendChild(menu)
     });
+    let contatoContainer = document.createElement("h3")
+    contatoContainer.textContent = "contatos"
+    containerFooter.appendChild(contatoContainer)
+    
+    let estiloContato = {
+        margin: "50px 0 0 0",
+        color: "rgba(0, 0, 0, 0.7)",
+        fontSize: "10vw"
+    }
+    Object.assign(contatoContainer.style, estiloContato)
     contatos.forEach(ctt => {
+        
         // create div nav de redes sociais
         const navRedes = document.createElement("div")
         navRedes.classList.add("nav-redes")

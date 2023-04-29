@@ -10,48 +10,48 @@ const bolos = [
         image: "./assets/img/bolos/abacaxi-c-coco.jpeg",
         sabor: "Abacaxi com coco",
         descricao: "Bolo de massa branca com recheio de Abacaxi com coco e cobertura feita com chantilly.",
-        kg: "5kg",
-        preco: "R$ 15"
+        kg: "1kg",
+        preco: "R$ 60"
     },
     {
         id: 1,
         image: "./assets/img/bolos/creme-belga.jpeg",
         sabor: "Creme belga",
-        descricao: "Bolo de 1 kg, Massa branca, recheio de creme belga, cobertura feita com chantilly.",
-        kg: "5kg",
-        preco: "R$ 15"
+        descricao: "Bolo de 1 kg, Massa branca, recheio de creme belga e cobertura feita com chantilly.",
+        kg: "1kg",
+        preco: "R$ 60"
     },
     {
         id: 2,
         image: "./assets/img/bolos/doce-de-leite.jpeg",
         sabor: "Doce de leite",
         descricao: "Bolo de 4,5 kg, Massa mesclada, recheio de doce de leite, cobertura feita com chantilly.",
-        kg: "5kg",
-        preco: "R$ 15"
+        kg: "1kg",
+        preco: "R$ 60"
     },
     {
         id: 3,
         image: "./assets/img/bolos/kitkat.jpeg",
         sabor: "Kitkat",
         descricao: "Bolo de 2 kg, Massa branca, recheio de kit kat, cobertura feita com chantilly.",
-        kg: "5kg",
-        preco: "R$ 15"
+        kg: "1kg",
+        preco: "R$ 60"
     },
     {
         id: 4,
         image: "./assets/img/bolos/ninho-c-morango.jpeg",
         sabor: "Ninho com morango",
         descricao: "Bolo de 1,5 kg, massa branca no sabor abacaxi, recheio de ninho c/ morangos, cobertura feita com chantilly.",
-        kg: "5kg",
-        preco: "R$ 15"
+        kg: "1kg",
+        preco: "R$ 60"
     },
     {
         id: 5,
         image: "./assets/img/bolos/oreo.jpeg",
         sabor: "Oreo",
         descricao: "Bolo de 2 kg, massa Preta, recheio de oreo, cobertura feita com chantilly.",
-        kg: "5kg",
-        preco: "R$ 15"
+        kg: "1kg",
+        preco: "R$ 60"
     }
 ];
 function exibirBolos() {
